@@ -22,6 +22,12 @@
     <Filter Include="Monster">
       <UniqueIdentifier>{01a2e5df-4961-4e66-a496-14e2124078d3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Act">
+      <UniqueIdentifier>{36f0b59c-80d0-4367-a775-d5fcae42fbf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Filehandler">
+      <UniqueIdentifier>{84b5eac5-3ecc-4d4e-9731-410c734562b0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -47,6 +53,18 @@
     </ClCompile>
     <ClCompile Include="Input.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ActOne.cpp">
+      <Filter>Act</Filter>
+    </ClCompile>
+    <ClCompile Include="Filehandler\sfh_read_file.cpp">
+      <Filter>Filehandler</Filter>
+    </ClCompile>
+    <ClCompile Include="Filehandler\sfh_write_file.cpp">
+      <Filter>Filehandler</Filter>
+    </ClCompile>
+    <ClCompile Include="Filehandler\sfh_file.cpp">
+      <Filter>Filehandler</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +94,24 @@
     </ClInclude>
     <ClInclude Include="Map.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ActOne.h">
+      <Filter>Act</Filter>
+    </ClInclude>
+    <ClInclude Include="Filehandler\sfh_read_file.h">
+      <Filter>Filehandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Filehandler\sfh_write_file.h">
+      <Filter>Filehandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Filehandler\simple_file_handler.h">
+      <Filter>Filehandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Filehandler\sfh_def.h">
+      <Filter>Filehandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Filehandler\sfh_file.h">
+      <Filter>Filehandler</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

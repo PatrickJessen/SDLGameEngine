@@ -19,6 +19,5 @@ private:
 public:
 	SDL_Surface* surface;
 	SDL_Texture* tex;
-	SDL_Rect spriteRect = { 0, 0, 24, 24 };
 };
 
