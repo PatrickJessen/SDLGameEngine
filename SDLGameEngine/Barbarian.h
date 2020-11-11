@@ -1,16 +1,15 @@
 #pragma once
 #include "Player.h"
 
-class Sorceress : public Player
+class Barbarian : public Player
 {
 public:
-	Sorceress(MainWindow* window, Sprite* sprite);
-	~Sorceress();
+	Barbarian(MainWindow* window, Sprite* sprite);
+	~Barbarian();
 
 public:
 	void LevelUp() override;
 	void Update() override;
 	void DrawPlayer(Sprite* sprite, MainWindow* window, int x, int y) override;
-	//const char* SpritePath() override;
-	//const char* SpriteStallPath() override;
 };
+

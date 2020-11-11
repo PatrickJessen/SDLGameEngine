@@ -150,6 +150,8 @@
   <ItemGroup>
     <ClCompile Include="ActOne.cpp" />
     <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="Barbarian.cpp" />
+    <ClCompile Include="CharacterSelection.cpp" />
     <ClCompile Include="Filehandler\sfh_file.cpp" />
     <ClCompile Include="Filehandler\sfh_read_file.cpp" />
     <ClCompile Include="Filehandler\sfh_write_file.cpp" />
@@ -158,12 +160,15 @@
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="Movement.cpp" />
+    <ClCompile Include="Paladin.cpp" />
     <ClCompile Include="Sorceress.cpp" />
     <ClCompile Include="Sprite.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ActOne.h" />
     <ClInclude Include="Animation.h" />
+    <ClInclude Include="Barbarian.h" />
+    <ClInclude Include="CharacterSelection.h" />
     <ClInclude Include="Filehandler\sfh_def.h" />
     <ClInclude Include="Filehandler\sfh_file.h" />
     <ClInclude Include="Filehandler\sfh_read_file.h" />
@@ -174,6 +179,7 @@
     <ClInclude Include="Map.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Movement.h" />
+    <ClInclude Include="Paladin.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Sorceress.h" />
     <ClInclude Include="Sprite.h" />

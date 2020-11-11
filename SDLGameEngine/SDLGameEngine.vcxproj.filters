@@ -66,6 +66,15 @@
     <ClCompile Include="Filehandler\sfh_file.cpp">
       <Filter>Filehandler</Filter>
     </ClCompile>
+    <ClCompile Include="Paladin.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Barbarian.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterSelection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainWindow.h">
@@ -112,6 +121,15 @@
     </ClInclude>
     <ClInclude Include="Filehandler\sfh_file.h">
       <Filter>Filehandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Paladin.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Barbarian.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterSelection.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -41,7 +41,7 @@ public:
 	};
 
 	Direction dir = stall;
-	float speed = 1.5f;
+	float speed = 1.01f;
 
 public:
 	virtual void LevelUp() {}
@@ -69,12 +69,39 @@ public:
 		{
 			dir = goRight;
 		}
+		else
+		{
+			dir = stall;
+		}
+	}
+
+	void SpriteMovement()
+	{
+		SetEnumState();
+		if (dir == goUp)
+		{
+			posY -= ((int)speed);
+		}
+		else if (dir == goDown)
+		{
+			posY += ((int)speed);
+		}
+		else if (dir == goLeft)
+		{
+			posX -= ((int)speed);
+		}
+		else if (dir == goRight)
+		{
+			posX += ((int)speed);
+		}
 	}
 
 public:
 	MainWindow* window;
 	Sprite* sprite;
-	SDL_Rect srcRect;
+	SDL_Rect srcRect = { 0, 0, 42, 72 };
 	SDL_Rect destRect;
+	float posX = 100;
+	float posY = 100;
 
 };

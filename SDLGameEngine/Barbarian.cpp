@@ -1,6 +1,6 @@
-#include "Sorceress.h"
+#include "Barbarian.h"
 
-Sorceress::Sorceress(MainWindow* window, Sprite* sprite)
+Barbarian::Barbarian(MainWindow* window, Sprite* sprite)
 {
 	this->window = window;
 	this->sprite = sprite;
@@ -11,19 +11,19 @@ Sorceress::Sorceress(MainWindow* window, Sprite* sprite)
 	stamina = 74;
 }
 
-Sorceress::~Sorceress()
+Barbarian::~Barbarian()
 {
 
 }
 
-void Sorceress::LevelUp()
+void Barbarian::LevelUp()
 {
 	life += 1;
 	mana += 2;
 	stamina += 1;
 }
 
-void Sorceress::Update()
+void Barbarian::Update()
 {
 	life = ((double)vitality) * 2 + 20;
 	mana = ((double)energy) * 2 - 35;
@@ -31,7 +31,7 @@ void Sorceress::Update()
 	LevelUp();
 }
 
-void Sorceress::DrawPlayer(Sprite* sprite, MainWindow* window, int x, int y)
+void Barbarian::DrawPlayer(Sprite* sprite, MainWindow* window, int x, int y)
 {
 	destRect = { x, y, 42, 72 };
 

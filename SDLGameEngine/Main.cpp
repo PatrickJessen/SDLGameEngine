@@ -8,7 +8,10 @@ int main()
 
 	while (window->Running())
 	{
+		actOne->Update(window);
 		actOne->Draw(window);
+
+		SDL_Delay(10);
 
 		window->Update();
 		window->Clear();
