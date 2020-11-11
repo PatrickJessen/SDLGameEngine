@@ -11,10 +11,10 @@ int main()
 		actOne->Update(window);
 		actOne->Draw(window);
 
-		SDL_Delay(10);
 
 		window->Update();
 		window->Clear();
+		SDL_Delay(10);
 	}
 
 	window->Clean();

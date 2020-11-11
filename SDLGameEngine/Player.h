@@ -6,6 +6,11 @@
 class Player
 {
 public:
+	Player(MainWindow* window, Sprite* sprite)
+	{
+		this->window = window;
+		this->sprite = sprite;
+	}
 	Player() = default;
 	~Player() = default;
 

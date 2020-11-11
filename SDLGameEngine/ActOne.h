@@ -13,8 +13,12 @@ private:
 	//Sprite* select;
 	Map* map;
 	Player* sorc;
+	Player* pala;
+	Player* barb;
 	Player* player;
-	Sprite* sprite;
+	Sprite* spriteSorc;
+	Sprite* spritePala;
+	Sprite* spriteBarb;
 	CharacterSelection* selectScreen;
 
 public:
@@ -22,5 +26,8 @@ public:
 
 	void Update(MainWindow* window);
 	void Draw(MainWindow* window);
+
+private:
+	void CheckSelectedChar();
 };
 
