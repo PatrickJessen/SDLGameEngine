@@ -42,9 +42,6 @@
     <ClCompile Include="Sorceress.cpp">
       <Filter>Player</Filter>
     </ClCompile>
-    <ClCompile Include="Movement.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Animation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -75,6 +72,15 @@
     <ClCompile Include="CharacterSelection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainWindow.h">
@@ -91,9 +97,6 @@
     </ClInclude>
     <ClInclude Include="Sorceress.h">
       <Filter>Player</Filter>
-    </ClInclude>
-    <ClInclude Include="Movement.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Animation.h">
       <Filter>Header Files</Filter>
@@ -130,6 +133,9 @@
     </ClInclude>
     <ClInclude Include="CharacterSelection.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <Filter>Player</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

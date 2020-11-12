@@ -1,14 +1,13 @@
 #include "Barbarian.h"
 
 Barbarian::Barbarian(MainWindow* window, Sprite* sprite)
+	: Player(window, sprite)
 {
-	this->window = window;
-	this->sprite = sprite;
-	strength = 10;
-	dexterity = 25;
-	vitality = 10;
-	energy = 35;
-	stamina = 74;
+	strength = 30;
+	dexterity = 20;
+	vitality = 25;
+	energy = 10;
+	stamina = 92;
 }
 
 Barbarian::~Barbarian()
@@ -18,22 +17,21 @@ Barbarian::~Barbarian()
 
 void Barbarian::LevelUp()
 {
-	life += 1;
-	mana += 2;
+	life += 2;
+	mana += 1;
 	stamina += 1;
 }
 
-void Barbarian::Update()
+void Barbarian::UpdateCharacter()
 {
-	life = ((double)vitality) * 2 + 20;
-	mana = ((double)energy) * 2 - 35;
-	stamina = vitality + 64;
+	life = (((double)vitality) * 4) + stamina - 137;
+	mana = ((double)energy);
 	LevelUp();
 }
 
-void Barbarian::DrawPlayer(Sprite* sprite, MainWindow* window, int x, int y)
+void Barbarian::DrawCharacter()
 {
-	destRect = { x, y, 42, 72 };
+	destRect = { (int)posX, (int)posY, 42, 72 };
 
 	SDL_RenderCopyEx(window->GetRender(), sprite->tex, &srcRect, &destRect, 0, 0, SDL_FLIP_NONE);
 }

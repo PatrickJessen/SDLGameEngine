@@ -4,7 +4,7 @@
 
 class Sprite
 {
-private:
+public:
 	MainWindow* window;
 
 public:

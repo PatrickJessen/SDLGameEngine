@@ -7,10 +7,14 @@ public:
 	Sorceress(MainWindow* window, Sprite* sprite);
 	~Sorceress();
 
+private:
+	void UpdateCharacter() override;
+
 public:
 	void LevelUp() override;
-	void Update() override;
-	void DrawPlayer(Sprite* sprite, MainWindow* window, int x, int y) override;
+	void DrawSkill(MainWindow* window) override;
+	void DrawCharacter() override;
+	int test();
 	//const char* SpritePath() override;
 	//const char* SpriteStallPath() override;
 };

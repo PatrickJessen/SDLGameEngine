@@ -4,11 +4,11 @@ Paladin::Paladin(MainWindow* window, Sprite* sprite)
 {
 	this->window = window;
 	this->sprite = sprite;
-	strength = 10;
-	dexterity = 25;
-	vitality = 10;
-	energy = 35;
-	stamina = 74;
+	strength = 25;
+	dexterity = 20;
+	vitality = 25;
+	energy = 15;
+	stamina = 89;
 }
 
 Paladin::~Paladin()
@@ -18,22 +18,22 @@ Paladin::~Paladin()
 
 void Paladin::LevelUp()
 {
-	life += 1;
-	mana += 2;
+	life += 2;
+	mana += ((int)1.5);
 	stamina += 1;
 }
 
-void Paladin::Update()
+void Paladin::UpdateCharacter()
 {
-	life = ((double)vitality) * 2 + 20;
-	mana = ((double)energy) * 2 - 35;
+	life = ((double)vitality) * 2 + 5;
+	mana = ((double)energy) * 1.5 - 7.5;
 	stamina = vitality + 64;
 	LevelUp();
 }
 
-void Paladin::DrawPlayer(Sprite* sprite, MainWindow* window, int x, int y)
+void Paladin::DrawCharacter()
 {
-	destRect = { x, y, 42, 72 };
+	destRect = { (int)posX, (int)posY, 42, 72 };
 
 	SDL_RenderCopyEx(window->GetRender(), sprite->tex, &srcRect, &destRect, 0, 0, SDL_FLIP_NONE);
 }

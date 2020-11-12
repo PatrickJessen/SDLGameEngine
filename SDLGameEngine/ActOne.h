@@ -29,5 +29,6 @@ public:
 
 private:
 	void CheckSelectedChar();
+	void CharUpdate();
 };
 

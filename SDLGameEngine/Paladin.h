@@ -7,9 +7,11 @@ public:
 	Paladin(MainWindow* window, Sprite* sprite);
 	~Paladin();
 
+private:
+	void UpdateCharacter() override;
+
 public:
 	void LevelUp() override;
-	void Update() override;
-	void DrawPlayer(Sprite* sprite, MainWindow* window, int x, int y) override;
+	void DrawCharacter() override;
 };
 

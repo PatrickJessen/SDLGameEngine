@@ -1,5 +1,10 @@
 #include "ActOne.h"
 
+__interface IInteface
+{
+	void Test();
+};
+
 ActOne::ActOne(MainWindow* window)
 {
 	this->window = window;
@@ -12,14 +17,13 @@ ActOne::ActOne(MainWindow* window)
 	pala = new Paladin(window, spritePala);
 	barb = new Barbarian(window, spriteBarb);
 	selectScreen = new CharacterSelection(window);
-	player = new Player(window, spriteSorc);
 
 }
 
 void ActOne::Update(MainWindow* window)
 {
-	player->SpriteMovement();
 	selectScreen->Update();
+	CharUpdate();
 }
 
 void ActOne::Draw(MainWindow* window)
@@ -41,14 +45,36 @@ void ActOne::CheckSelectedChar()
 {
 	if (selectScreen->pick == selectScreen->sorc)
 	{
-		sorc->DrawPlayer(spriteSorc, window, player->posX, player->posY);
+		sorc->Draw();
+		sorc->DrawSkill(window);
 	}
 	else if (selectScreen->pick == selectScreen->pala)
 	{
-		pala->DrawPlayer(spritePala, window, player->posX, player->posY);
+		pala->Draw();
+		pala->DrawSkill(window);
 	}
 	else if (selectScreen->pick == selectScreen->barb)
 	{
-		barb->DrawPlayer(spriteBarb, window, player->posX, player->posY);
+		barb->Draw();
+		barb->DrawSkill(window);
+	}
+}
+
+void ActOne::CharUpdate()
+{
+	if (selectScreen->pick == selectScreen->sorc)
+	{
+		sorc->SpriteMovement();
+		sorc->Update();
+	}
+	else if (selectScreen->pick == selectScreen->pala)
+	{
+		pala->SpriteMovement();
+		pala->Update();
+	}
+	else if (selectScreen->pick == selectScreen->barb)
+	{
+		barb->SpriteMovement();
+		barb->Update();
 	}
 }
