@@ -14,7 +14,7 @@ public:
 	void LevelUp() override;
 	void DrawSkill(MainWindow* window) override;
 	void DrawCharacter() override;
-	int test();
+	
 	//const char* SpritePath() override;
 	//const char* SpriteStallPath() override;
 };

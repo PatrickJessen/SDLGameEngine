@@ -50,14 +50,3 @@ void Sorceress::DrawCharacter()
 
 	SDL_RenderCopyEx(window->GetRender(), sprite->tex, &srcRect, &destRect, 0, 0, SDL_FLIP_NONE);
 }
-
-int Sorceress::test()
-{
-	return 0;
-}
-
-class BaseClass
-{
-public:
-	int xPos = 32;
-};

@@ -15,7 +15,6 @@ private:
 	Player* sorc;
 	Player* pala;
 	Player* barb;
-	Player* player;
 	Sprite* spriteSorc;
 	Sprite* spritePala;
 	Sprite* spriteBarb;

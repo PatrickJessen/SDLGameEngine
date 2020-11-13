@@ -76,10 +76,10 @@
       <Filter>Player</Filter>
     </ClCompile>
     <ClCompile Include="Abillities.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Player</Filter>
     </ClCompile>
     <ClCompile Include="Animation.cpp">
-      <Filter>Player</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
