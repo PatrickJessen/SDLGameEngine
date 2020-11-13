@@ -42,9 +42,6 @@
     <ClCompile Include="Sorceress.cpp">
       <Filter>Player</Filter>
     </ClCompile>
-    <ClCompile Include="Animation.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Map.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -76,10 +73,13 @@
       <Filter>Player</Filter>
     </ClCompile>
     <ClCompile Include="Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Abillities.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Monster.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +135,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Projectile.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Abillities.h">
       <Filter>Player</Filter>
     </ClInclude>
   </ItemGroup>
