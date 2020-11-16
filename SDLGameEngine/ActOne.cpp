@@ -36,7 +36,7 @@ void ActOne::Draw(MainWindow* window)
 	else if (selectScreen->menu == false)
 	{
 
-		map->DrawMap(window, 24, 1);
+		map->DrawMap(window, 24, 3);
 		CheckSelectedChar();
 	}
 }
@@ -63,15 +63,18 @@ void ActOne::CharUpdate()
 	{
 		sorc->SpriteMovement();
 		sorc->Update();
+		cam->WorldCamera(map, sorc);
 	}
 	else if (selectScreen->pick == selectScreen->pala)
 	{
 		pala->SpriteMovement();
 		pala->Update();
+		cam->WorldCamera(map, pala);
 	}
 	else if (selectScreen->pick == selectScreen->barb)
 	{
 		barb->SpriteMovement();
 		barb->Update();
+		cam->WorldCamera(map, barb);
 	}
 }

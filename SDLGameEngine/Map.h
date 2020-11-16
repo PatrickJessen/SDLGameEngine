@@ -18,7 +18,7 @@ public:
 	SDL_Texture* texture = nullptr;
 	SDL_Rect dstRect;
 	SDL_Rect srcRect;
-	SDL_Rect moveMap = { 0, 0 };
+	SDL_Rect moveMap = { 50000, 50000 };
 
 	int height;
 	int width;

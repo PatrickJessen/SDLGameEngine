@@ -5,6 +5,7 @@
 #include "Sorceress.h"
 #include "Paladin.h"
 #include "CharacterSelection.h"
+#include "Camera.h"
 
 class ActOne
 {
@@ -19,6 +20,7 @@ private:
 	Sprite* spritePala;
 	Sprite* spriteBarb;
 	CharacterSelection* selectScreen;
+	Camera* cam;
 
 public:
 	ActOne(MainWindow* window);

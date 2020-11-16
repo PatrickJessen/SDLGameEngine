@@ -35,6 +35,9 @@ void Sorceress::UpdateCharacter()
 		projectiles.push_back(Projectile(sprBullet, posX, posY, hsp, vsp, 2.0f));
 	}
 
+	for (int i = 0; i < 100; i++)
+		projectiles.push_back(Projectile(sprBullet, posX, posY, hsp, vsp, 2.0f));
+
 	for (int i = 0; i < projectiles.size(); i++)
 	{
 		if (projectiles[i].CheckTimeToDestroy())

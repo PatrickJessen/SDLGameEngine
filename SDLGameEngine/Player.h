@@ -129,12 +129,12 @@ public:
 public:
 	MainWindow* window;
 	Sprite* sprite;
-	SDL_Rect srcRect = { 0, 0, 42, 72 };
+	SDL_Rect srcRect = { (int)posX, (int)posY, 42, 72 };
 	SDL_Rect destRect;
 	SDL_Rect hitRect;
 	SDL_Rect playerHitbox;
-	float posX = 100;
-	float posY = 100;
+	float posX = 450;
+	float posY = 300;
 	float hsp = 1.0f;
 	float vsp = 1.0f;
 

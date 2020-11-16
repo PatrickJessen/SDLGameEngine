@@ -62,7 +62,7 @@ void Map::DrawMap(MainWindow* window, int tileSize, int zoom)
         for (int x = 0; x < width; x++)
         {
             // tile position
-            dstRect = { x * tileSize * zoom + moveMap.x, y * tileSize * zoom + moveMap.y, tileSize * zoom, tileSize * zoom };
+            dstRect = { x * tileSize * zoom + moveMap.x - 1000, y * tileSize * zoom + moveMap.y - 1000, tileSize * zoom, tileSize * zoom };
             // tilenummer fra txt filen
             srcRect = { level[INDEX].texture * tileSize, 0, tileSize, tileSize };
             SDL_RenderCopy(window->GetRender(), texture, &srcRect, &dstRect);

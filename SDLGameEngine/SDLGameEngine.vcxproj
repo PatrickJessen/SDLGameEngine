@@ -152,6 +152,7 @@
     <ClCompile Include="ActOne.cpp" />
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Barbarian.cpp" />
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="CharacterSelection.cpp" />
     <ClCompile Include="Filehandler\sfh_file.cpp" />
     <ClCompile Include="Filehandler\sfh_read_file.cpp" />
@@ -171,6 +172,7 @@
     <ClInclude Include="ActOne.h" />
     <ClInclude Include="Animation.h" />
     <ClInclude Include="Barbarian.h" />
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="CharacterSelection.h" />
     <ClInclude Include="Filehandler\sfh_def.h" />
     <ClInclude Include="Filehandler\sfh_file.h" />
