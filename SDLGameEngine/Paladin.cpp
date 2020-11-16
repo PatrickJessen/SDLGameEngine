@@ -34,6 +34,6 @@ void Paladin::UpdateCharacter()
 void Paladin::DrawCharacter()
 {
 	destRect = { (int)posX, (int)posY, 42, 72 };
-
+	SDL_RenderDrawRect(window->GetRender(), &destRect);
 	SDL_RenderCopyEx(window->GetRender(), sprite->tex, &srcRect, &destRect, 0, 0, SDL_FLIP_NONE);
 }

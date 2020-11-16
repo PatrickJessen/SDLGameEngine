@@ -46,17 +46,14 @@ void ActOne::CheckSelectedChar()
 	if (selectScreen->pick == selectScreen->sorc)
 	{
 		sorc->Draw();
-		sorc->DrawSkill(window);
 	}
 	else if (selectScreen->pick == selectScreen->pala)
 	{
 		pala->Draw();
-		pala->DrawSkill(window);
 	}
 	else if (selectScreen->pick == selectScreen->barb)
 	{
 		barb->Draw();
-		barb->DrawSkill(window);
 	}
 }
 

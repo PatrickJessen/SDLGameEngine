@@ -60,6 +60,7 @@ protected:
 public:
 	void Update();
 	void Draw();
+	bool Testing(int hp);
 
 public:
 	virtual void LevelUp() {}
@@ -67,7 +68,7 @@ public:
 
 	virtual void DrawPlayer(Sprite* sprite, MainWindow* window, int x, int y) {}
 
-	virtual void DrawSkill(MainWindow* window) {}
+	virtual void DrawSkill() {}
 	virtual const char* SpritePath() { return nullptr; }
 	virtual const char* SpriteStallPath() { return nullptr; }
 
@@ -130,7 +131,8 @@ public:
 	Sprite* sprite;
 	SDL_Rect srcRect = { 0, 0, 42, 72 };
 	SDL_Rect destRect;
-	SDL_Rect skillDirection = { 0, 0, 0, 0 };
+	SDL_Rect hitRect;
+	SDL_Rect playerHitbox;
 	float posX = 100;
 	float posY = 100;
 	float hsp = 1.0f;

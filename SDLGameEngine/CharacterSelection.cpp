@@ -20,7 +20,7 @@ void CharacterSelection::Draw(MainWindow* window)
 
 void CharacterSelection::Update()
 {
-	if (Input::MousePressed(MouseButton::LEFT))
+	if (Input::MousePressed(MouseButton::LEFT) && menu == true)
 	{
 		if (XYInRect(sorcRect, Input::MouseX(), Input::MouseY()))
 		{

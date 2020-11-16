@@ -12,7 +12,7 @@ private:
 
 public:
 	void LevelUp() override;
-	void DrawSkill(MainWindow* window) override;
+	void DrawSkill() override;
 	void DrawCharacter() override;
 	
 	//const char* SpritePath() override;
